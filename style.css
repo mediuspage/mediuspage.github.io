@@ -1,0 +1,163 @@
+*{
+  font-family: 'Alatsi', sans-serif;
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+    .about{
+      font-size: 0.80rem;
+    }
+  }
+@media screen and (min-width: 501px) {
+    .about{
+      font-size: 1.4rem;
+    }
+  }
+.content{
+    text-align: center;
+    background-color: Dark (#262626);
+    font-size: 25px;
+    padding :4rem;
+    height: 60vh;
+}
+.skills-main{
+  height: 45vh;
+  margin: 3%;
+}
+.skills{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+.skills > *{
+  flex: 1 1 20%;
+  margin: 7px;
+  color: #fff;
+ 
+}
+.btnn{
+  background-color:rgb(140, 15, 57);
+  border: none;
+  font-size: 2rem;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  border: 2px solid ;
+  z-index: 1;
+}
+.btnn:hover{
+  color: #fff;
+}
+.btnn:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top:0;
+  left:50%;
+  right:50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color:rgb(140, 15, 57);
+}
+.btnn:hover::before{
+  transition: 0.5s all ease;
+  left: 0;
+  right:0;
+  opacity: 200%;
+  z-index: -1;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("40.jpg");
+    opacity: 120%;
+    margin-top:-25px;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+ 
+  .card {
+    width: 250px;
+    margin :15px;
+  }
+  
+  .card__content {
+    text-align: center;
+    position: relative;
+    padding: 7em 3em;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card__content {
+    transform: rotateY(.5turn);
+  }
+  
+  .card__front,
+  .card__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+  }
+  
+  .card__front {
+    background-color: var(--clr);
+    background-image: url(#);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: black;
+  }
+  .card__front::before {
+    content: '';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform: var(--level-one);
+  }
+  .card__title {
+    font-size: 1.5rem;
+    font-size: 1vw;
+    transform: var(--level-three);
+    order: 2;
+    text-transform: uppercase;
+  }
+  
+  .card__subtitle {
+    transform: var(--level-two);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .70rem;
+    font-weight: var(--fw-bold);
+    opacity: .7;
+  }
+    .card__body {
+    transform: var(--level-two);
+    font-weight: var(fw-normal);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .card__back {
+    transform: rotateY(.5turn);
+    color: var(--clr);
+    background: rgb(400, 154, 199);
+  }
+  
