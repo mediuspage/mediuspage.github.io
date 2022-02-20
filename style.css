@@ -121,6 +121,7 @@
     background-size: cover;
     background-blend-mode: overlay;
     color: black;
+    background: rgb(187, 255, 153);
   }
   .card__front::before {
     content: '';
@@ -158,6 +159,6 @@
   .card__back {
     transform: rotateY(.5turn);
     color: var(--clr);
-    background: rgb(400, 154, 199);
+    background: rgb(187, 255, 153);
   }
   
